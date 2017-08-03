@@ -1,7 +1,8 @@
-POWERLEVEL9K_MODE='awesome-patched'
+export TERM="xterm-256color"
+# POWERLEVEL9K_MODE='awesome-patched'
 # POWERLEVEL9K_SHORTEN_DIR_LENGTH=2
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon dir vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(ram battery)
+# POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon dir vcs)
+# POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(ram battery)
 
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/agungsetiawan/.oh-my-zsh
@@ -10,8 +11,8 @@ export ZSH=/Users/agungsetiawan/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-# ZSH_THEME="cobalt2"
- ZSH_THEME="powerlevel9k/powerlevel9k"
+ZSH_THEME="cobalt2"
+# ZSH_THEME="powerlevel9k/powerlevel9k"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -98,4 +99,8 @@ export TERM=screen-256color
 
 export PATH=/opt/chefdk/bin:$PATH
 
-alias rm='echo "use trash instead"'
+# alias rm='echo "use trash instead"'
+alias kienthus='ssh deploy@kienthus'
+
+EDITOR='vim'
+BUNDLER_EDITOR='vim'

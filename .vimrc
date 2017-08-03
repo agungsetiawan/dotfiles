@@ -51,10 +51,15 @@ Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'ervandew/supertab'
 Plugin 'acoustichero/goldenrod.vim'
 Plugin 'easymotion/vim-easymotion'
-Plugin 'jiangmiao/auto-pairs'
-Plugin 'majutsushi/tagbar'
+" Plugin 'jiangmiao/auto-pairs'
+" Plugin 'majutsushi/tagbar'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'hwartig/vim-seeing-is-believing'
+Plugin 'dikiaap/minimalist'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-rails'
+Plugin 'mattn/emmet-vim'
+
 
 call vundle#end()
 
@@ -67,6 +72,7 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 let g:airline#extensions#branch#enabled = 1
 let g:airline_powerline_fonts = 1
 let g:airline_theme = 'molokai'
+" let g:airline_theme = 'minimalist'
 set laststatus=2
 
 set grepprg=ag
@@ -91,3 +97,8 @@ augroup seeingIsBelievingSettings
   autocmd FileType ruby nmap <buffer> <F5> <Plug>(seeing-is-believing-run)
   autocmd FileType ruby imap <buffer> <F5> <Plug>(seeing-is-believing-run)
 augroup END
+
+imap jj <Esc>
+nmap <leader>r :CtrlPMRUFiles<cr>
+nmap <leader>b :CtrlPBuffer<cr>
+let g:ctrlp_match_window = 'bottom,order:ttb,min:1,max:20,results:20'
